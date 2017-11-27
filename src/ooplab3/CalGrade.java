@@ -9,8 +9,20 @@ public class CalGrade {
 //        BufferedReader
         BufferedReader reader = new BufferedReader
                 (new InputStreamReader(System.in));
-        System.out.println("Enter your score :");
-        int score = Integer.parseInt(reader.readLine());
+        int count = 0;
+        int score = 0;
+        for (int i=1;i<=3;i++ ) {
+        System.out.println("Enter your score (1-100) :");
+        score = Integer.parseInt(reader.readLine());
+            if (score<0 || score > 100){
+                count++;
+                if (count==3){
+                    System.out.println("System Error.");
+                    break;
+                }
+            }
+
+        }
 
 //    score 0-49  grade F
 //    score 50-59 grade D
@@ -28,6 +40,10 @@ public class CalGrade {
             System.out.println("you Grade : B");
         else if (score>=80)
             System.out.println("you Grade : A");
+
+
+        // Loop For
+
 
 
     }//main
