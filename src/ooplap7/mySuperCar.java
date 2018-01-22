@@ -8,7 +8,7 @@ public class mySuperCar {
         SuperCar s = new SuperCar();
         s = inputData(s);
 
-        getSuperCarInfo(s);
+        s.getSuperCarInfo(s);
 
     }//class
 
@@ -30,14 +30,7 @@ public class mySuperCar {
         return s;
     }
 
-    private static void getSuperCarInfo(SuperCar s) {
-        System.out.println("SuperCar: ");
-        System.out.println("carbrand: " + s.getcarbrand());
-        System.out.println("carcolor: " + s.getCarcolor());
-        System.out.println("size: " + s.getCarenginesize());
-        System.out.println("peed: " + s.getMaxspeed());
-        System.out.println("forigin: " + s.getCountryoforigin());
-    }
+
 
 
 

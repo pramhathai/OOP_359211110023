@@ -1,6 +1,16 @@
 package ooplap7;
-
 public class SuperCar {
+
+    public void getSuperCarInfo(SuperCar s) {
+        System.out.println("SuperCar: ");
+        System.out.println("carbrand: " + s.getcarbrand());
+        System.out.println("carcolor: " + s.getCarcolor());
+        System.out.println("size: " + s.getCarenginesize());
+        System.out.println("peed: " + s.getMaxspeed());
+        System.out.println("forigin: " + s.getCountryoforigin());
+        }
+
+
     private String carbrand;
     private String carcolor;
     private String carenginesize;
