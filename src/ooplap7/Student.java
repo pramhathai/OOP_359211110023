@@ -9,6 +9,7 @@ package ooplap7;
 //4. group
 
 public class Student {
+    public static String faculty = "Management Technology";
     private String id;
     private String name ;
     private String major;
