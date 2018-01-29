@@ -1,29 +1,16 @@
-
-package ooplap7;
-
+package ooplab7;
 //design class
-//taking about Student?
-//1. Student id
-//2. name
-//3. major
-//4. group
-
+// taking about Student?
+// 1. student id
+// 2. name
+// 3. major
+// 4. group
 public class Student {
-    public static String faculty = "Management Technology";
+    public  String faculty = "Management Technology";
     private String id;
-    private String name ;
+    private String name;
     private String major;
     private String group;
-
-    //constructor
-    //default
-    public Student(){}
-    public Student (String id,String n, String m, String g){
-        this.id = id;
-        this.name = n;
-        this.major = m;
-        this.group = g;
-    }//constructor
 
     //getter and setter methods
     //id
@@ -57,5 +44,20 @@ public class Student {
     public void setGroup(String group) {
         this.group = group;
     }
-}
 
+    //constructor
+    //default
+    public Student(){}
+    public Student(String id,String n,String m,String g){
+        this.id = id;
+        this.name = n;
+        this.major = m;
+        this.group = g;
+    }// condtructor
+
+
+
+
+
+
+}//class
